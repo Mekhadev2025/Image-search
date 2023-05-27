@@ -1,10 +1,11 @@
 
  import React from 'react'
- import SignUp from "../src/SignUp"
-  
+ 
+import Navbar from './components/Navbar'
  export default function App()
  {
     return(
-        <SignUp/>
+
+       <Navbar/>
     )
  }
