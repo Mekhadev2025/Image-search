@@ -1,11 +1,20 @@
 
  import React from 'react'
- 
-import Navbar from './components/Navbar'
+ import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
+import Layout from "../src/pages/Layout"
+import Home from "./pages/Home"
+import SignUp from "./pages/SignUp"
  export default function App()
  {
     return(
-
-       <Navbar/>
+<BrowserRouter>
+       <Routes>
+         <Route path="/" element={<Layout />}>
+           <Route index element={<Home />} />
+           <Route path="signup" element={<SignUp/>} />
+         </Route>
+       </Routes>
+     </BrowserRouter>
+       
     )
  }

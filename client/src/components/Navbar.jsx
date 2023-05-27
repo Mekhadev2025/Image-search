@@ -1,23 +1,26 @@
-import Home from "../pages/Home"
-import SignUp from "../pages/SignUp"
+
 import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 export default function Navbar(){
 return (
-<div>
+    <div className="navbar">
     
-    <BrowserRouter>
-        <Routes>
-             <Route path="/" element={<Home/>}/>
-            <Route path="/signup" element={<SignUp/>}/>
-            
-        </Routes>
-    </BrowserRouter>
-
-         
- 
-
-
+   <div className="sections">
+   <ul>
+        <li>
+          <Link to="/" className='LINK'>HOME</Link>
+        </li>
+        <li>
+          <Link to="/signup" className='LINK'>Sign up</Link>
+        </li>
+        
+      </ul>
 </div>
+ 
+  
+
+ </div>
+
+ 
 
 )
 
