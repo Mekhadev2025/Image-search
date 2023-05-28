@@ -1,27 +1,17 @@
 
 import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
+import "../styles/Navbar.css"
 export default function Navbar(){
 return (
-    <div className="navbar">
-    
-   <div className="sections">
-   <ul>
-        <li>
-          <Link to="/" className='LINK'>HOME</Link>
-        </li>
-        <li>
-          <Link to="/signup" className='LINK'>Sign up</Link>
-        </li>
-        
-      </ul>
-</div>
- 
-  
-
- </div>
-
- 
+    <div className="navbar bg-body-tertiary">
+        <div className="container-fluid">
+                    <Link to="/" className='LINK'>Mekha-Dobby </Link>
+                    <button>
+                    <Link to="/signup" className='LINK'>Sign up</Link>
+                    </button>
+        </div>
+                    
+    </div>
 
 )
-
 }

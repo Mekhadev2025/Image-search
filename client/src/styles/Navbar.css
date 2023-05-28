@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:0 2rem;
+    background-color:#fff;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1); 
+
+}
+.LINK{
+    margin:1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    color: black;
+}
+.navbar button{
+    text-decoration: none;
+    background-color:blueviolet;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:1.2rem;
+    color:white;
+    padding:0.5rem;
+    border-radius:5px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+    text-decoration: none;
+    margin: 1em;;
+}
+ 
